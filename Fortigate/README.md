@@ -1,13 +1,13 @@
 # FortiGate Labs
-### FortiGate (FortiOS) practice labs in GNS3, each with a fault-injection exercise
+### FortiGate (FortiOS) practice labs, each with a fault-injection exercise
 
-Part of the [GNS3 labs repository](../README.md).
+Part of the [Network Labs repository](../README.md).
 
 ---
 
 ## Summary
 
-My FortiGate labs, built and tested in GNS3. Each lab has the topology, the FortiOS config with its addressing plan, verification output with screenshots, and a "Break-It" exercise: something I broke on purpose, the symptom it caused, and how I fixed it.
+My FortiGate labs, built and tested in GNS3 (newer ones in containerlab). Each lab has the topology, the FortiOS config with its addressing plan, verification output with screenshots, and a "Break-It" exercise: something I broke on purpose, the symptom it caused, and how I fixed it.
 
 ## Lab Environment
 

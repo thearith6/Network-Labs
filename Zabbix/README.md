@@ -1,7 +1,7 @@
 # Zabbix Labs
 ### Zabbix 7.0 network monitoring practice labs, each with a fault-injection exercise
 
-Part of the [GNS3 labs repository](../README.md).
+Part of the [Network Labs repository](../README.md).
 
 ---
 

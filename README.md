@@ -1,14 +1,14 @@
-# GNS3 Labs
-### Hands-on networking labs built and tested in GNS3, each with a fault-injection exercise
+# Network Labs
+### Hands-on networking labs built and tested in GNS3 and containerlab, each with a fault-injection exercise
 
-[![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
-[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
+[![Platform](https://img.shields.io/badge/Platform-GNS3%20%7C%20containerlab-blue?style=for-the-badge&logo=gnometerminal)](https://github.com/thearith6/Network-Labs)
+[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/Network-Labs)
 
 ---
 
 ## Summary
 
-This repository collects my GNS3 practice labs. Every lab has a topology, device configurations, show-command verification, and a "Break-It" exercise: a deliberate misconfiguration with the symptom and the fix.
+This repository collects my networking practice labs. My earlier labs are built in GNS3 and newer ones in containerlab; each lab README says which. Every lab has a topology, device configurations, show-command verification, and a "Break-It" exercise: a deliberate misconfiguration with the symptom and the fix.
 
 ## Collections
 
@@ -24,11 +24,11 @@ More collections will be added as separate folders.
 ## Repository Layout
 
 ```
-GNS3-Labs/
+Network-Labs/
 ├── CCNA/          Completed CCNA / CCNP labs (see CCNA/README.md)
 ├── Fortigate/     FortiGate labs and lab template
 ├── MikroTik/      MikroTik RouterOS (CHR) labs
-├── Zabbix/        Zabbix monitoring labs (Proxmox LXC, GNS3 SNMP devices)
+├── Zabbix/        Zabbix monitoring labs (Proxmox LXC, SNMP devices)
 └── README.md
 ```
 

@@ -1,21 +1,21 @@
 # CCNA → CCNP Labs
 ### Switching, Routing, Security and BGP Practice Labs with Fault-Injection Exercises
 
-[![Labs Completed](https://img.shields.io/badge/Labs-38-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Labs)
-[![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
-[![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
-[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
+[![Labs Completed](https://img.shields.io/badge/Labs-38-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/Network-Labs)
+[![Platform](https://img.shields.io/badge/Platform-GNS3%20%7C%20containerlab-blue?style=for-the-badge&logo=gnometerminal)](https://github.com/thearith6/Network-Labs)
+[![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/Network-Labs)
+[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/Network-Labs)
 
-Part of the [GNS3 labs repository](../README.md).
+Part of the [Network Labs repository](../README.md).
 
 ---
 
 ## Summary
 
-This folder documents my hands-on GNS3 labs: topologies, configurations, verification and troubleshooting. It mainly covers **CCNA** topics, plus CCNP-level BGP, as I work toward **CCNP Enterprise (ENCOR / ENARSI)**.
+This folder documents my hands-on Cisco labs: topologies, configurations, verification and troubleshooting. It mainly covers **CCNA** topics, plus CCNP-level BGP, as I work toward **CCNP Enterprise (ENCOR / ENARSI)**.
 
 Each lab here includes:
-1. **A topology** built and tested in GNS3.
+1. **A topology** built and tested in GNS3 or containerlab.
 2. **Device configurations** with a documented IP addressing scheme.
 3. **Show-command verification** with CLI output and screenshots.
 
@@ -29,7 +29,7 @@ All topologies are built and tested on the same virtualized setup:
 
 | Component | Specification | Purpose |
 | :--- | :--- | :--- |
-| **Network Emulator** | GNS3 Server / Client v3.1 | Core network topology orchestration |
+| **Network Emulator** | GNS3 Server / Client v3.1 (labs up to 7.6) · containerlab (newer labs) | Core network topology orchestration |
 | **Layer 3 Routing** | Cisco IOU / IOL (`x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol`) | BGP, OSPFv2/OSPFv3, EIGRP, Policy Routing |
 | **Layer 2 Switching** | Cisco IOU / IOL (`x86_64_crb_linux_l2-adventerprisek9-ms.17.18.2.iol`) | VLANs, Trunks, EtherChannel, Rapid PVST+, Port Security |
 | **Switching (security labs 4.2–4.3)** | Cisco IOSvL2 (QEMU appliance) | DHCP Snooping, Dynamic ARP Inspection |
@@ -148,7 +148,7 @@ BGP labs on eBGP/iBGP peering, route reflectors, and path selection.
 
 ## Roadmap (`dev` Branch)
 
-The following labs and modules are being built on the [`dev`](https://github.com/thearith6/GNS3-Labs/tree/dev) branch and will move to `main` once validated:
+The following labs and modules are being built on the [`dev`](https://github.com/thearith6/Network-Labs/tree/dev) branch and will move to `main` once validated:
 
 - **Module 3 (Lab 9):** QoS: Classification, Marking and Priority Queueing
 - **Module 6:** Wireless LAN Architecture & Network Automation (RESTCONF / Ansible)
@@ -167,6 +167,6 @@ The following labs and modules are being built on the [`dev`](https://github.com
 
 **Thearith** — building hands-on enterprise networking skills toward CCNP Enterprise (ENCOR).
 
-I built these labs in GNS3 to practice routing, switching and security, and to document how things break and how to fix them. Every lab includes a fault I injected on purpose.
+I built these labs in GNS3 and containerlab to practice routing, switching and security, and to document how things break and how to fix them. Every lab includes a fault I injected on purpose.
 
 - **GitHub:** [@thearith6](https://github.com/thearith6)
