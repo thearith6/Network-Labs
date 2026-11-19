@@ -7,10 +7,11 @@
 - [Lab 3 – BGP Route Reflectors](Lab%203%20%E2%80%93%20BGP%20Route%20Reflectors/README.md)
 - [Lab 4 – Local Preference and Weight](Lab%204%20%E2%80%93%20Local%20Preference%20and%20Weight/README.md)
 - [Lab 5 – MED and AS-Path Prepending](Lab%205%20%E2%80%93%20MED%20and%20AS-Path%20Prepending/README.md)
+- [Lab 6 – BGP Tables and AD](Lab%206%20%E2%80%93%20BGP%20Tables%20and%20AD/README.md)
 
 ### In Development (on `dev` branch)
-- *Lab 6 – BGP Communities*
-- *Lab 7 – BGP Route Filtering*
-- *Lab 8 – Route Aggregation: Summary-Only and Suppress-Maps*
-- *Lab 9 – BGP Multipath and BFD*
-- *Lab 10 – Dual-ISP Multihoming (Capstone)*
+- *Lab 7 – BGP Communities*
+- *Lab 8 – BGP Route Filtering*
+- *Lab 9 – Route Aggregation: Summary-Only and Suppress-Maps*
+- *Lab 10 – BGP Multipath and BFD*
+- *Lab 11 – Dual-ISP Multihoming (Capstone)*

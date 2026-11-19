@@ -1,6 +1,6 @@
-# Lab 1.1: BGP Tables and Administrative Distance
+# Lab 7.6: BGP Tables and Administrative Distance
 
-> **GNS3 Project:** [`ENARSI Module 1 - BGP Fundamentals | Lab 1 - BGP Tables and AD.gns3`](./ENARSI%20Module%201%20-%20BGP%20Fundamentals%20%7C%20Lab%201%20-%20BGP%20Tables%20and%20AD.gns3)
+> **GNS3 Project:** [`Module 7 - BGP (CCNP) | Lab 6 - BGP Tables and AD.gns3`](./Module%207%20-%20BGP%20%28CCNP%29%20%7C%20Lab%206%20-%20BGP%20Tables%20and%20AD.gns3)
 > **Platform:** GNS3 3.1 · Cisco IOSv `15.9(3)M12` · 4 routers (C1, I1, I2, C2)
 > **Key takeaway:** A route can be the best path (`>`) in the BGP table and still not be used. The routing table takes the route with the lowest AD, so a static route (AD 1) beats eBGP (AD 20).
 

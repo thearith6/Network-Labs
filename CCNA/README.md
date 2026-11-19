@@ -1,7 +1,7 @@
 # CCNA → CCNP Labs
 ### Switching, Routing, Security and BGP Practice Labs with Fault-Injection Exercises
 
-[![Labs Completed](https://img.shields.io/badge/Labs-36-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Labs)
+[![Labs Completed](https://img.shields.io/badge/Labs-38-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Labs)
 [![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
 [![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
 [![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
@@ -34,12 +34,13 @@ All topologies are built and tested on the same virtualized setup:
 | **Layer 2 Switching** | Cisco IOU / IOL (`x86_64_crb_linux_l2-adventerprisek9-ms.17.18.2.iol`) | VLANs, Trunks, EtherChannel, Rapid PVST+, Port Security |
 | **Switching (security labs 4.2–4.3)** | Cisco IOSvL2 (QEMU appliance) | DHCP Snooping, Dynamic ARP Inspection |
 | **Router (hardening lab 4.4)** | Cisco IOS router (QEMU appliance) | Device hardening |
+| **Router (labs 4.6, 7.6)** | Cisco IOSv `15.9(3)M12` (QEMU appliance) | RADIUS troubleshooting, BGP table vs RIB |
 | **Authentication & AAA** | Docker (`freeradius-server:latest`) | Centralized RADIUS AAA testing |
 | **End Systems & Testing** | VPCS & Alpine Linux (`alpine-ssh:latest`) | Host IP testing, DHCP client verification, SSH/NTP/syslog testing |
 
 ---
 
-## Lab Matrix (36 Labs)
+## Lab Matrix (38 Labs)
 
 The `main` branch of the repository contains the completed labs. Labs still in progress live on the `dev` branch.
 
@@ -91,7 +92,7 @@ Focuses on NAT/PAT, First-Hop Redundancy Protocols, Access Control Lists, and De
 
 ---
 
-### Module 4: Layer 2 & Infrastructure Security (5 Labs)
+### Module 4: Layer 2 & Infrastructure Security (6 Labs)
 Hardening campus networks against Layer 2 attacks and rogue devices.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -101,6 +102,7 @@ Hardening campus networks against Layer 2 attacks and rogue devices.
 | **4.3** | Dynamic ARP Inspection (DAI) | ARP Poisoning prevention, Snooping Binding Validation, ARP ACLs | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%203%20–%20Dynamic%20ARP%20Inspection/README.md) |
 | **4.4** | Device Hardening | `enable secret`, `service password-encryption`, `login block-for` brute-force protection, login banner, disabling unused services | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%204%20–%20Device%20Hardening/README.md) |
 | **4.5** | AAA Security with RADIUS | Cisco IOS AAA New-Model, FreeRADIUS Docker Integration, Local Fallback | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%205%20–%20AAA%20with%20RADIUS%20and%20Local%20Fallback/README.md) |
+| **4.6** | Troubleshooting: RADIUS Login Fails | RADIUS auth-port 1812 vs 1645, `test aaa`, `debug radius`, local fallback | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%206%20–%20RADIUS%20Login%20Fails/README.md) |
 
 ---
 
@@ -114,7 +116,7 @@ Deployment of native IPv6 addressing and dynamic routing.
 
 ---
 
-### Module 7: Border Gateway Protocol (BGP - CCNP Level) (5 Labs)
+### Module 7: Border Gateway Protocol (BGP - CCNP Level) (6 Labs)
 BGP labs on eBGP/iBGP peering, route reflectors, and path selection.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -124,6 +126,7 @@ BGP labs on eBGP/iBGP peering, route reflectors, and path selection.
 | **7.3** | BGP Route Reflectors | Route Reflector Clients, Cluster-IDs, Non-Client Reflection rules | [View Lab](Module%207%20–%20BGP%20%28CCNP%29/Lab%203%20–%20BGP%20Route%20Reflectors/README.md) |
 | **7.4** | Path Selection: Local Preference & Weight | Influencing outbound traffic, Cisco Weight vs BGP Local Preference | [View Lab](Module%207%20–%20BGP%20%28CCNP%29/Lab%204%20–%20Local%20Preference%20and%20Weight/README.md) |
 | **7.5** | Path Selection: MED & AS-Path Prepending | Influencing inbound return traffic, Multi-Exit Discriminator, Prepend tuning | [View Lab](Module%207%20–%20BGP%20%28CCNP%29/Lab%205%20–%20MED%20and%20AS-Path%20Prepending/README.md) |
+| **7.6** | Troubleshooting: BGP Tables & Administrative Distance | BGP table vs RIB, `rib-failure`, static AD 1 vs eBGP AD 20, `update-source` | [View Lab](Module%207%20–%20BGP%20%28CCNP%29/Lab%206%20–%20BGP%20Tables%20and%20AD/README.md) |
 
 ---
 
@@ -149,7 +152,7 @@ The following labs and modules are being built on the [`dev`](https://github.com
 
 - **Module 3 (Lab 9):** QoS: Classification, Marking and Priority Queueing
 - **Module 6:** Wireless LAN Architecture & Network Automation (RESTCONF / Ansible)
-- **Module 7 (Labs 6–10):** Advanced BGP (Communities, Route Filtering, BFD, Dual-ISP Multihoming)
+- **Module 7 (Labs 7–11):** Advanced BGP (Communities, Route Filtering, BFD, Dual-ISP Multihoming)
 - **Module 8:** Advanced Routing (Mutual Route Redistribution, Route Tags, Policy-Based Routing, VRF-Lite)
 - **Module 9:** Enterprise VPN Technologies (GRE, Site-to-Site IPsec with IKEv2, DMVPN Phase 1 & 3)
 - **Module 10:** Infrastructure Services (PIM-SM Multicast, Flexible NetFlow, IP SLA)
