@@ -1,6 +1,6 @@
-# Lab 2.1: RADIUS Login Fails (Wrong RADIUS Port)
+# Lab 4.6: RADIUS Login Fails (Wrong RADIUS Port)
 
-> **GNS3 Project:** [`ENARSI Module 2 - AAA | Lab 1 - RADIUS Login Fails.gns3`](./ENARSI%20Module%202%20-%20AAA%20%7C%20Lab%201%20-%20RADIUS%20Login%20Fails.gns3)
+> **GNS3 Project:** [`Module 4 - Layer 2 Security (CCNA) | Lab 6 - RADIUS Login Fails.gns3`](./Module%204%20-%20Layer%202%20Security%20%28CCNA%29%20%7C%20Lab%206%20-%20RADIUS%20Login%20Fails.gns3)
 > **Platform:** GNS3 3.1 · Cisco IOSv `15.9(3)M12` · 1 router (R1) · FreeRADIUS 3 in Docker on the host
 > **Key takeaway:** A RADIUS server that never answers is a port, reachability or key problem, not a password problem. A wrong password gets an Access-Reject right away. IOS still defaults to the old ports 1645/1646.
 
