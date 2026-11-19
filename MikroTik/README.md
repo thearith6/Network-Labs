@@ -1,7 +1,7 @@
 # MikroTik Labs
-### MikroTik RouterOS (CHR) practice labs in GNS3, each with a fault-injection exercise
+### MikroTik RouterOS (CHR) practice labs, each with a fault-injection exercise
 
-Part of the [GNS3 labs repository](../README.md).
+Part of the [Network Labs repository](../README.md).
 
 ---
 
