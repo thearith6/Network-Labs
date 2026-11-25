@@ -14,7 +14,7 @@ This repository collects my networking practice labs. My earlier labs are built 
 
 | Folder | Topic | Status | Link |
 | :--- | :--- | :---: | :---: |
-| **CCNA** | CCNA and CCNP-level labs: switching, OSPF, IP services, L2 security, IPv6, BGP | 38 labs | [CCNA](CCNA/README.md) |
+| **CCNA** | CCNA and CCNP-level labs: switching, OSPF, IP services, L2 security, IPv6, BGP | 39 labs | [CCNA](CCNA/README.md) |
 | **Fortigate** | FortiGate (FortiOS) firewall, NAT, VPN and security profiles | In progress | [Fortigate](Fortigate/README.md) |
 | **MikroTik** | MikroTik RouterOS (CHR): IP addressing, static routing, NAT, firewall | In progress | [MikroTik](MikroTik/README.md) |
 | **Zabbix** | Zabbix 7.0 monitoring: agent troubleshooting, triggers, Telegram alerts, SNMP | In progress | [Zabbix](Zabbix/README.md) |

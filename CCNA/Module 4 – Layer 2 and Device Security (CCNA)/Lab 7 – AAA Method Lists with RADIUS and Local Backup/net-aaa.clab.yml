@@ -1,0 +1,38 @@
+# Lab 4.7: AAA method lists with RADIUS and a local backup user.
+# R1 starts with IP addresses and SSH only; AAA is configured by hand.
+name: net-aaa
+mgmt:
+  network: clab-aaa
+  ipv4-subnet: 172.20.30.0/24
+topology:
+  nodes:
+    ADMIN-PC:
+      kind: linux
+      image: alpine-ssh:latest
+      mgmt-ipv4: 172.20.30.21
+      exec:
+        - ip addr add 10.0.1.10/24 dev eth1
+        - ip route replace default via 10.0.1.1
+    R1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.18.2
+      mgmt-ipv4: 172.20.30.11
+      startup-config: r1.partial.cfg
+    RADIUS:
+      kind: linux
+      image: alpine:latest
+      mgmt-ipv4: 172.20.30.50
+      exec:
+        - ip addr add 10.0.2.10/24 dev eth1
+    # FreeRADIUS runs inside the RADIUS node's network namespace (10.0.2.10, UDP 1812/1813)
+    radiusd:
+      kind: linux
+      image: freeradius/freeradius-server:latest
+      network-mode: container:RADIUS
+      binds:
+        - clients.conf:/etc/freeradius/clients.conf:ro
+        - authorize:/etc/freeradius/mods-config/files/authorize:ro
+      cmd: -X
+  links:
+    - endpoints: ["ADMIN-PC:eth1", "R1:e0/1"]
+    - endpoints: ["R1:e0/2", "RADIUS:eth1"]
