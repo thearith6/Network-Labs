@@ -1,0 +1,8 @@
+# RADIUS users: bob = admin (priv 15), alice = priv 1
+bob	Cleartext-Password := "Bob@123"
+	Service-Type = Administrative-User,
+	cisco-avpair = "shell:priv-lvl=15"
+
+alice	Cleartext-Password := "Alice@123"
+	Service-Type = NAS-Prompt-User
+
