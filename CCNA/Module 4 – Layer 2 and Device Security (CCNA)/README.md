@@ -9,3 +9,4 @@
 - [Lab 5 – AAA with RADIUS and Local Fallback](Lab%205%20%E2%80%93%20AAA%20with%20RADIUS%20and%20Local%20Fallback/README.md)
 - [Lab 6 – RADIUS Login Fails](Lab%206%20%E2%80%93%20RADIUS%20Login%20Fails/README.md)
 - [Lab 7 – AAA Method Lists with RADIUS and Local Backup](Lab%207%20%E2%80%93%20AAA%20Method%20Lists%20with%20RADIUS%20and%20Local%20Backup/README.md)
+- [Lab 8 – SSH and Device Hardening](Lab%208%20%E2%80%93%20SSH%20and%20Device%20Hardening/README.md)

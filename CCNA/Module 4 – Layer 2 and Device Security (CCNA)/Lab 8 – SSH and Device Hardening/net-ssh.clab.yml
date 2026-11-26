@@ -1,0 +1,31 @@
+# Lab 4.8: SSH and device hardening on IOS.
+# R1 starts with IP addresses only; the hardening is configured by hand.
+# 172.20.80.0/24 is the out-of-band management network (the NOC). It reaches R1 on e0/0 in the management VRF.
+name: net-ssh
+mgmt:
+  network: clab-ssh
+  ipv4-subnet: 172.20.80.0/24
+topology:
+  nodes:
+    ADMIN:
+      kind: linux
+      image: alpine-ssh:latest
+      mgmt-ipv4: 172.20.80.21
+      exec:
+        - ip addr add 10.0.1.10/24 dev eth1
+        - ip route add 10.0.0.0/8 via 10.0.1.1
+    R1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.18.2
+      mgmt-ipv4: 172.20.80.11
+      startup-config: r1.partial.cfg
+    USER:
+      kind: linux
+      image: alpine-ssh:latest
+      mgmt-ipv4: 172.20.80.22
+      exec:
+        - ip addr add 10.0.2.10/24 dev eth1
+        - ip route add 10.0.0.0/8 via 10.0.2.1
+  links:
+    - endpoints: ["ADMIN:eth1", "R1:e0/1"]
+    - endpoints: ["R1:e0/2", "USER:eth1"]
