@@ -1,7 +1,7 @@
 # CCNA → CCNP Labs
 ### Switching, Routing, Security and BGP Practice Labs with Fault-Injection Exercises
 
-[![Labs Completed](https://img.shields.io/badge/Labs-39-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/Network-Labs)
+[![Labs Completed](https://img.shields.io/badge/Labs-40-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/Network-Labs)
 [![Platform](https://img.shields.io/badge/Platform-GNS3%20%7C%20containerlab-blue?style=for-the-badge&logo=gnometerminal)](https://github.com/thearith6/Network-Labs)
 [![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/Network-Labs)
 [![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/Network-Labs)
@@ -40,7 +40,7 @@ All topologies are built and tested on the same virtualized setup:
 
 ---
 
-## Lab Matrix (39 Labs)
+## Lab Matrix (40 Labs)
 
 The `main` branch of the repository contains the completed labs. Labs still in progress live on the `dev` branch.
 
@@ -92,7 +92,7 @@ Focuses on NAT/PAT, First-Hop Redundancy Protocols, Access Control Lists, and De
 
 ---
 
-### Module 4: Layer 2 & Infrastructure Security (7 Labs)
+### Module 4: Layer 2 & Infrastructure Security (8 Labs)
 Hardening campus networks against Layer 2 attacks and rogue devices.
 
 | Lab | Title | Key Protocols / Technologies | Platform | Documentation |
@@ -104,6 +104,7 @@ Hardening campus networks against Layer 2 attacks and rogue devices.
 | **4.5** | AAA Security with RADIUS | Cisco IOS AAA New-Model, FreeRADIUS Docker Integration, Local Fallback | GNS3 | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%205%20–%20AAA%20with%20RADIUS%20and%20Local%20Fallback/README.md) |
 | **4.6** | Troubleshooting: RADIUS Login Fails | RADIUS auth-port 1812 vs 1645, `test aaa`, `debug radius`, local fallback | GNS3 | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%206%20–%20RADIUS%20Login%20Fails/README.md) |
 | **4.7** | AAA Method Lists with RADIUS & Local Backup | Login vs exec method lists, console safety list, local fallback, wrong server address | containerlab | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%207%20–%20AAA%20Method%20Lists%20with%20RADIUS%20and%20Local%20Backup/README.md) |
+| **4.8** | SSH & Device Hardening | SSH only, VTY access-class with `vrf-also`, `exec-timeout`, `login block-for` + quiet-mode exception, idle sessions that never close | containerlab | [View Lab](Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%208%20–%20SSH%20and%20Device%20Hardening/README.md) |
 
 ---
 
